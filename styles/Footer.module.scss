@@ -1,0 +1,17 @@
+@import 'variables.scss';
+
+.footer {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: $color-background-a1;
+  color: $color-text-a1;
+  display: flex;
+  justify-content: space-around;
+
+  &__item, &__link {
+    font-size: 12;
+    color: $color-text-a1;
+    text-decoration: none;
+  }
+
+}
