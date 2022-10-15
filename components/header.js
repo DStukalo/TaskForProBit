@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 
-import styles from '../styles/Header.module.scss';
+import styles from '../styles/components/Header.module.scss';
 
 export const Header = () => {
     const router = useRouter();
@@ -11,7 +11,7 @@ export const Header = () => {
         <header className={styles.header}>
             <div>
                 <Link href='/'>
-                    <>
+                    <a className={styles.header__link}>
                         <h1 className={styles.title}>
                             <Image
                                 src='/logo.svg'
@@ -22,7 +22,7 @@ export const Header = () => {
                             Coin
                         </h1>
                         <h2 className={styles.subtitle}>observer</h2>
-                    </>
+                    </a>
                 </Link>
             </div>
             <nav className={styles.navigation}>

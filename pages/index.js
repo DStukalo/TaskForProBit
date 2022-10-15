@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 
-import styles from '../styles/Home.module.scss';
+import styles from '../styles/pages/Home.module.scss';
 
 export default function Home() {
     return (
@@ -27,26 +27,47 @@ export default function Home() {
                 </div>
 
                 <div className={styles.start__image}>
-                    <Image src='/image_21.png' width={605} height={660} />
+                    <Image
+                        src='/main/woman_with_cash.png'
+                        width={605}
+                        height={660}
+                        alt='woman_with_cash'
+                    />
                 </div>
             </section>
             <section className={styles.about}>
                 <div className={styles.about__images}>
                     <div className={styles.about__image}>
                         <Image
-                            src='/Binance Coin.png'
+                            src='/main/Binance Coin.png'
                             width={265}
                             height={153}
+                            alt='Binance coin'
                         />
                     </div>
                     <div className={styles.about__image}>
-                        <Image src='/Bitcoin.png' width={265} height={153} />
+                        <Image
+                            src='/main/Bitcoin.png'
+                            width={265}
+                            height={153}
+                            alt='bitcoin'
+                        />
                     </div>
                     <div className={styles.about__image}>
-                        <Image src='/Dogecoin.png' width={265} height={153} />
+                        <Image
+                            src='/main/Dogecoin.png'
+                            width={265}
+                            height={153}
+                            alt='dogecoin'
+                        />
                     </div>
                     <div className={styles.about__image}>
-                        <Image src='/Ethereum.png' width={265} height={153} />
+                        <Image
+                            src='/main/Ethereum.png'
+                            width={265}
+                            height={153}
+                            alt='ethereum'
+                        />
                     </div>
                 </div>
                 <div className={styles.about__description}>

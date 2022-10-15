@@ -1,4 +1,4 @@
-@import 'variables.scss';
+@import './abstracts/variables.scss';
 
 .header {
   display: flex;
@@ -6,11 +6,17 @@
   justify-content: space-between;
   align-items: center;
   background-color: $color-background-a1;
+
+  &__link {
+    text-decoration: none;
+  }
 }
 
 .title {
   font-size: $font-size-a1;
   color: $color-text-a2;
+  text-decoration: none;
+  
 
   & img {
     padding: 0 5px;
@@ -21,6 +27,7 @@
   font-size: $font-size-a2;
   letter-spacing : .38em;
   color: $color-text-a2;
+  text-decoration: none;
 }
 
 .navigation {
