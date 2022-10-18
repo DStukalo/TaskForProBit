@@ -1,11 +1,16 @@
-@import './abstracts/variables.scss';
+@import '../abstracts/variables.scss';
 
 .header {
-  display: flex;
   padding: 10px;
+  display: flex;
+  width: 100vw;
   justify-content: space-between;
   align-items: center;
+  box-sizing: border-box;
   background-color: $color-background-a1;
+  @media (max-width : 399.9px) {
+    flex-direction: column;
+  }
 
   &__link {
     text-decoration: none;
@@ -31,7 +36,9 @@
 }
 
 .navigation {
+  padding: 10px 0;
   width: 250px;
+  box-sizing: border-box;
   display: flex;
   justify-content: space-around;
 
