@@ -1,0 +1,18 @@
+@import '../abstracts/variables.scss';
+
+.footer {
+  padding: 10px;
+  width: 100vw;
+  box-sizing: border-box;
+  background-color: $color-background-a1;
+  color: $color-text-a1;
+  display: flex;
+  justify-content: space-around;
+
+  &__item, &__link {
+    font-size: 12;
+    color: $color-text-a1;
+    text-decoration: none;
+  }
+
+}

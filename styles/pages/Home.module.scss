@@ -1,0 +1,137 @@
+@import '../abstracts/variables.scss';
+
+.wrapper {
+  padding: 0 10px;
+  max-width: 1400px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.start {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  max-width: 1280px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: $color-text-a3;
+  text-align: left;
+
+  @media (max-width : 899.9px) {
+    flex-direction: column;
+  }
+
+  &__text {
+    padding: 10px;
+    max-width: 300px;
+    font-size: 28px;
+
+    @media (max-width : 899.9px) { 
+      order: 5;
+    }
+
+    @media (max-width : 707.9px) {
+      padding-top: 20px;      
+      width: 320px;
+    }
+  }
+
+  &__subtext {
+    max-width: 320px;
+    padding: 10px 25px 10px 10px;
+    padding-bottom: 20px;
+    font-size: 24px;
+
+    @media (max-width : 899.9px) { 
+      order: 6;
+    }
+
+    @media (max-width : 707.9px) {
+      width: 320px;
+    }
+  }
+
+  &__link {
+    padding: 20px;
+    text-decoration: none;
+    color: $color-text-a1;
+    border: none;
+    border-radius: 30px;
+    background-color: $color-background-a1;
+    font-size: 20px;
+  }
+
+  &__image {
+    padding-top: 20px;
+    width: 605px;
+    margin-bottom: 30px;
+    border-radius: 30px;
+    background: linear-gradient(180deg, $color-background-a1 11.46%, rgba(255, 255, 255, 0.401235) 59.27%, rgba(255, 255, 255, 0) 100%);;
+
+    @media (max-width : 899.9px) { 
+      order: -1;
+    }
+
+    @media (max-width : 609.9px) {
+      width: 80%;
+    }
+  }
+}
+
+.about {
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-around;
+  max-width: 1280px;
+  @media (max-width : 899.9px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+   &__images {
+    max-width: 650px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-radius: 30px;
+    background: linear-gradient(180deg, $color-background-a1 11.46%, rgba(255, 255, 255, 0.401235) 69.27%, rgba(255, 255, 255, 0) 100%);;
+    @media (max-width : 999.9px) {
+      width: 80%;
+    }
+   }
+
+   &__image {
+    padding: 20px;
+    box-sizing: border-box;
+   }
+
+   &__image:first-child {
+    margin-left: 15%;
+   }
+
+   &__image:nth-child(2) {
+    margin-left: 15px;
+   }
+
+   &__description {
+    max-width: 350px;
+    margin-top: 200px;
+    padding: 20px;
+
+    @media (max-width : 899.9px) {
+      margin-top: 20px;
+    }
+  }
+
+  &__title {
+    font-size: 28px;
+    color: $color-text-a2;
+  }
+
+  &__text {
+    color: $color-text-a3;
+  }
+}

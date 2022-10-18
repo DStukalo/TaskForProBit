@@ -1,0 +1,26 @@
+@import '../abstracts/variables.scss';
+
+.about {
+  min-height: calc(100vh - 117px);
+  color: $color-text-a1;
+  display: flex;
+  justify-content: center;
+
+&__title {
+  font-size: 32px;
+  color: $color-text-a2;
+}
+
+  &__description {
+    margin: 10px;
+    width: 60%;
+    @media (max-width : 899.9px) {
+      width: 80%;
+    }
+  }
+
+  &__text {
+    padding: 10px;
+    box-sizing: border-box;
+  }
+}

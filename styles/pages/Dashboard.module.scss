@@ -1,0 +1,26 @@
+@import '../abstracts/variables.scss';
+
+.dashboards {
+  padding: 0 10px;
+  max-width: 1400px;
+  min-height: calc(100vh - 117px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title {
+    margin: 10px;
+    font-size: 32px;
+    text-transform: uppercase;
+  }
+
+}
+
+.cards{
+  margin: 5px;
+  padding: 5px;
+  max-width: 900px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}

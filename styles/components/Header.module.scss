@@ -1,0 +1,54 @@
+@import '../abstracts/variables.scss';
+
+.header {
+  padding: 10px;
+  display: flex;
+  width: 100vw;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: $color-background-a1;
+  @media (max-width : 399.9px) {
+    flex-direction: column;
+  }
+
+  &__link {
+    text-decoration: none;
+  }
+}
+
+.title {
+  font-size: $font-size-a1;
+  color: $color-text-a2;
+  text-decoration: none;
+  
+
+  & img {
+    padding: 0 5px;
+  }
+}
+
+.subtitle {
+  font-size: $font-size-a2;
+  letter-spacing : .38em;
+  color: $color-text-a2;
+  text-decoration: none;
+}
+
+.navigation {
+  padding: 10px 0;
+  width: 250px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+
+  &__item {
+    text-decoration: none;
+    color: $color-text-a2;
+    font-size: $font-size-a2;
+  }
+}
+
+.active {
+  text-decoration: underline;
+}
