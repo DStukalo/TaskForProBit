@@ -1,4 +1,4 @@
-import Chart from '../../components/Chart';
+import Chart from '../../components/chart';
 import styles from '../../styles/components/Coin.module.scss';
 
 export async function getServerSideProps(context) {
