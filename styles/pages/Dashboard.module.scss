@@ -1,30 +1,26 @@
-@import './abstracts/variables.scss';
+@import '../abstracts/variables.scss';
 
-.wrapper {
+.dashboards {
   padding: 0 10px;
   max-width: 1400px;
-  min-height: calc(100vh - 137px);
+  min-height: calc(100vh - 117px);
   display: flex;
-  justify-content: center;
   flex-direction: column;
   align-items: center;
+
+  &__title {
+    margin: 10px;
+    font-size: 32px;
+    text-transform: uppercase;
+  }
+
 }
 
 .cards{
   margin: 5px;
   padding: 5px;
-  max-width: 1200px;
+  max-width: 900px;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-}
-
-.card {
-  // min-width: 250px;
-  padding: 5px;
-  margin: 5px;
-  width: 200px;
-  // border: 1px solid $color-background-a1;
-  border-radius: 15px;
-  box-shadow: 0px 0px 0px 5px rgba(0,0,0, 0.02); 
 }
