@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-import { Card } from '../components/card';
+import { Card } from '../components/Card';
 import styles from '../styles/pages/Dashboard.module.scss';
 
 export default function Dashboard() {
@@ -15,14 +15,17 @@ export default function Dashboard() {
             console.log(data, Date());
             setState(data);
         };
-        setInterval(fetchData, 20000);
+        setInterval(fetchData, 10000);
     }, []);
 
     if (state) {
         console.log(Object.entries(state));
     }
     return (
-        <div className={styles.wrapper}>
+        <div className={styles.dashboards}>
+            <h2 className={styles.dashboards__title}>
+                The most popular currency:
+            </h2>
             <section className={styles.cards}>
                 {state && Object.entries(state).map((el) => Card(el))}
                 {!state && <div>Wait few second</div>}
