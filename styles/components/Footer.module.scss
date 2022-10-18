@@ -1,8 +1,9 @@
-@import './abstracts/variables.scss';
+@import '../abstracts/variables.scss';
 
 .footer {
-  margin-top: 20px;
   padding: 10px;
+  width: 100vw;
+  box-sizing: border-box;
   background-color: $color-background-a1;
   color: $color-text-a1;
   display: flex;
