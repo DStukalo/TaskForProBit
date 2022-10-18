@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-no-duplicate-props */
 import Link from 'next/link';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
