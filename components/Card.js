@@ -19,7 +19,9 @@ export const Card = (props) => {
                 </Link>
             </div>
             <div>
-                <h4 className={styles.card__title}>{props[0]}</h4>
+                <Link href={`/coin/${props[0]}`}>
+                    <h4 className={styles.card__title}>{props[0]}</h4>
+                </Link>
                 <p className={styles.card__description}>usd: {props[1].usd}</p>
                 <p className={styles.card__description}>eur: {props[1].eur}</p>
                 <Link href={`/coin/${props[0]}`}>
