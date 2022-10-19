@@ -26,10 +26,7 @@ export default function Chart(props) {
                 <CartesianGrid strokeDasharray='3 3' />
                 <XAxis dataKey='name' tick={false} />
                 <YAxis />
-                <Tooltip
-                    position={{ x: 0, y: 0 }}
-                    // wrapperStyle={{ width: '250px' }}
-                />
+                <Tooltip position={{ x: 0 }} />
                 <Legend />
                 <Line type='monotone' dataKey='value' stroke='#82ca9d' />
             </LineChart>
