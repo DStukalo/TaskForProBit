@@ -27,6 +27,7 @@
     padding: 10px;
     max-width: 300px;
     font-size: 28px;
+    line-height: 140%;
 
     @media (max-width : 899.9px) { 
       order: 5;
@@ -43,6 +44,7 @@
     padding: 10px 25px 10px 10px;
     padding-bottom: 20px;
     font-size: 24px;
+    line-height: 140%;
 
     @media (max-width : 899.9px) { 
       order: 6;
@@ -61,6 +63,7 @@
     border-radius: 30px;
     background-color: $color-background-a1;
     font-size: 20px;
+    cursor: pointer;
   }
 
   &__image {
@@ -120,7 +123,7 @@
     max-width: 350px;
     margin-top: 200px;
     padding: 20px;
-
+    
     @media (max-width : 899.9px) {
       margin-top: 20px;
     }
@@ -129,6 +132,7 @@
   &__title {
     font-size: 28px;
     color: $color-text-a2;
+    line-height: 140%;
   }
 
   &__text {
